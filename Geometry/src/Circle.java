@@ -33,19 +33,20 @@ public class Circle {
 
 
     public double getCircumference(){
-        //Todo  Implement
-        return 0.0;   // This will make compiler happy
+        return 2 * Math.PI * radius;
     }
 
     public double getArea(){
-        //Todo  Implement
-        return 0.0;   // This will make compiler happy
+        return Math.PI * Math.pow(radius, 2);   // This will make compiler happy
     }
 
     public boolean isInside(Point p){
-        //Todo  Implement
+
         //This is a trap!
         return false;   // This will make compiler happy
+    }
+    public String toString(){
+        return "radius: " + radius + "\nCenter: " + center;
     }
 
 }
